@@ -36,6 +36,7 @@ def get_birth_date(name: str) -> str:
         birth date of the given person
     """
     infobox_text = clean_text(get_first_infobox_text(get_page_html(name)))
+    print(infobox_text)
     # TODO: fill this in
     pattern = "REPLACE ME"
     error_text = (
@@ -73,6 +74,9 @@ if __name__ == "__main__":
     print(format_birth(get_birth_date("Tim Berners-Lee"), "Tim Berners-Lee"))
     # should be 1949-01-17
     print(format_birth(get_birth_date("Anita Borg"), "Anita Borg"))
+    
+    pat = re.compile("REPLACE ME", re.IGNORECASE)
+
 
     # uncomment below lines for tests once you think you're getting the right output
     # print('\n<<<< Running asserts, this might take a sec >>>>')
