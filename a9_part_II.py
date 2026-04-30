@@ -53,7 +53,7 @@ if __name__ == "__main__":
     print(f'Earth has a polar radius of {get_planet_radius("Earth")}km')
     # should be 66854
     print(f'Jupiter has a polar radius of {get_planet_radius("Jupiter")}km')
-    # should be 54364
+    # should be 66842
     print(f'Saturn has a polar radius of {get_planet_radius("Saturn")}km')
 
     # uncomment below lines for tests once you think you're getting the right output
